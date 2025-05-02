@@ -12,11 +12,16 @@ const options = {
     },
     servers: [
       {
-        url: 'http://localhost:5000/api',
+        url: 'http://localhost:5000',
+        description: 'Local server',
+      },
+      {
+        url: 'https://authapi-7fn5.onrender.com',
+        description: 'Production server',
       },
     ],
   },
-  apis: ['./routes/*.js'], 
+  apis: ['./routes/*.js'],
 };
 
 const swaggerSpec = swaggerJsDoc(options);
