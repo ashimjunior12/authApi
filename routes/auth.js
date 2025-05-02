@@ -17,7 +17,7 @@ const {
 
 /**
  * @swagger
- * /auth/signup:
+ * /api/auth/signup:
  *   post:
  *     summary: Register a new user
  *     tags: [Auth]
@@ -48,7 +48,7 @@ router.post('/signup', Signup);
 
 /**
  * @swagger
- * /auth/verify-email/{token}:
+ * /api/auth/verify-email/{token}:
  *   get:
  *     summary: Verify user email
  *     tags: [Auth]
@@ -68,7 +68,7 @@ router.get('/verify-email/:token', verifyEmail);
 
 /**
  * @swagger
- * /auth/login:
+ * /api/auth/login:
  *   post:
  *     summary: Log in a user
  *     tags: [Auth]
@@ -98,7 +98,7 @@ router.post('/login', Login);
 
 /**
  * @swagger
- * /auth/forgot-password:
+ * /api/auth/forgot-password:
  *   post:
  *     summary: Request password reset link
  *     tags: [Auth]
@@ -123,7 +123,7 @@ router.post('/forgot-password', ForgotPassword);
 
 /**
  * @swagger
- * /auth/reset-password/{token}:
+ * /api/auth/reset-password/{token}:
  *   post:
  *     summary: Reset password using token
  *     tags: [Auth]
