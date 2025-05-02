@@ -16,7 +16,7 @@ const options = {
         description: 'Local server',
       },
       {
-        url: 'https://authapi-7fn5.onrender.com',
+        url: 'https://authapi-7fn5.onrender.com/api',
         description: 'Production server',
       },
     ],
